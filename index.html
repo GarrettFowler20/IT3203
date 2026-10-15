@@ -9,26 +9,49 @@
 <body>
     <header>
         <h1>All About Web Servers</h1>
-        <nav> <!--Links to other pages-->
-            
+        <nav> <!-- Navigation bar which links to other pages-->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="howServersWork.html">How Servers Work</a></li>
+                <li><a href="speedAndSecurity.html">Speed and Security</a></li>
+                <li><a href="keyConcepts.html">Key Concepts</a></li>
+                <li><a href="references.html">References</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
         </nav>
     </header>
     <main>
-        <section id="abstract"> <!-- Abstract-->
+        <h1>All About Web Servers</h1>
+        <hr>
+        <section id="abstract"> <!-- Abstract, id for css-->
             <h2>Abstract</h2>
             <p>Web servers are the backbone of the World Wide Web. They combine hardware and software to receive HTTP requests from browsers and send back the pages, images, and data people ask for. This site explains how web servers work, how they stay fast and secure, and how they grew from a single machine at CERN into global cloud systems.</p>
         </section>
-        <section id="keyTerms"> <!-- Key Terms-->
+        <section id="keyTerms"> <!-- Key Terms, id for css-->
             <h2>Key Terms</h2>
-            <ul>
-            <li><strong>HTTP</strong>: the rules browsers and servers use to talk.</li>
-            <li><strong>Proxy</strong>: a machine that forwards requests between users and servers.</li>
-            <li><strong>Load balancing</strong>: spreading requests across many servers.</li>
-            <li><strong>Caching</strong>: temporarily storing content to serve it faster.</li>
-            <li><strong>Cloud computing</strong>: hosting files in remote data centers.</li>
+            <ul> <!-- List to keep it organized -->
+                <li><strong>HTTP</strong>: the rules browsers and servers use to talk.</li>
+                <li><strong>Proxy</strong>: a machine that forwards requests between users and servers.</li>
+                <li><strong>Load balancing</strong>: spreading requests across many servers.</li>
+                <li><strong>Caching</strong>: temporarily storing content to serve it faster.</li>
+                <li><strong>Cloud computing</strong>: hosting files in remote data centers.</li>
             </ul>
         </section>
-    </main>
 
+        <section>
+            <h2>Table of Contents</h2> <!-- Table of Contents, uses a list for each link-->
+            <ol class="tableOfContents">
+                <li><a href="howServersWork.html">How Servers Work</a></li>
+                <li><a href="speedAndSecurity.html">Speed and Security</a></li>
+                <li><a href="keyConcepts.html">Key Concepts</a></li>
+                <li><a href="references.html">References</a></li>
+                <li><a href="about.html">About</a></li>
+            </ol>
+            
+        </section>
+    </main>
+    <footer>
+        <p>2026 - Garrett Fowler - <a href="https://ksuweb.github.io/IT3203/">Class Website</a></p>
+    </footer>
 </body>
 </html>

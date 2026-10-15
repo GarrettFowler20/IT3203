@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>All About Web Servers</h1>
+        <nav> <!-- Navigation bar which links to other pages-->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="howServersWork.html">How Servers Work</a></li>
+                <li><a href="speedAndSecurity.html">Speed and Security</a></li>
+                <li><a href="keyConcepts.html">Key Concepts</a></li>
+                <li><a href="references.html">References</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Speed and Security</h1>
+        <hr>
+        <h2>Static vs Dynamic</h2>
+        <section id="staticDynamic"> <!-- Two boxes that display Static vs Dyanamic-->
+                <p><strong>Static</strong>: 
+                     Static webservers stay the same over time and don't constantly change.
+                     Static web servers are usually
+                     faster than dynamic servers, but have a limited pool of
+                     information to be requested.
+                </p>
+                <p><strong>Dynamic</strong>: 
+                    Dynamic web servers, generate new files when the user request them. While these are more complex and harder
+                    to maintain, they give personalization to the user
+                    and allows them to interact with more and get
+                    addition information.
+                </p>
+        </section>
+        <h2>How to make it faster</h2> <!-- Ways that improve webserver speed -->
+        <ul>
+            <li><strong>Load balancing</strong>: Load balancing distributes
+                multiple incoming requests to many different
+                servers. Instead of just one main server trying to
+                handle everything, multiple are used to balance
+                the requests. It helps improve the overall
+                performance and reliability of the servers.
+            </li>
+            <br>
+            <li><strong>Caching</strong>: Caching allows for a web
+                server to temporarily store web content, so it can
+                be requested faster in the future. When there are
+                very large servers, that have a large amount of
+                requests, caching can help process those requests
+                quicker and keep the servers from being
+                overwhelmed.
+            </li>
+            <br>
+            <li><strong>Cloud computing</strong>: Cloud computing allows
+                companies to store their websites and files inside of
+                remote data centers. These data centers help host and
+                manage these files, instead of doing it locally on their
+                own servers.
+            </li>
+        </ul>
+        <h2>How to make it secure</h2> <!-- Goes over threats and ways to prevent them -->
+
+        <h4>Possible Threats</h4> 
+        <ul>
+            <li><strong>Malware</strong>: Malicious software that be used against web servers
+                to steal information, gain access to websites, or modify files.
+            </li>
+            <br>
+            <li><strong>DDoS Attacks</strong>: When an attacker sends a very large amount of
+                requests to a server, which could overload and shut down a server
+            </li>
+            <br>
+            <li><strong>Unauthenticated Access</strong>: When someone gets access to a website, a server, or a
+                webpage, without permission. This could lead to important and sensitive data being accessed.
+            </li>
+        </ul>
+        <h4>Security Measures</h4>
+        <ul>
+            <li><strong>Firewalls</strong>: A security system that filters out incoming and outgoing HTTP 
+                and HTTPS requests bases off of rules.
+            </li>
+            <br>
+            <li><strong>Encryption</strong>: A process that converts information or data into a code, 
+                to try and prevent malicious access.
+            </li>
+            <br>
+            <li><strong>Authentication</strong>: A way to verify a user's identity before granting access 
+                to a restricted website or system.
+            </li>
+        </ul>
+    </main>
+    <footer>
+        <p>2026 - Garrett Fowler - <a href="https://ksuweb.github.io/IT3203/">Class Website</a></p>
+    </footer>
+</body>
+</html>

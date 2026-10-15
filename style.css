@@ -1,5 +1,106 @@
-#abstract{
-    background:#f59898; 
-    border:5px solid #6969b3; 
+
+/* Colors: C2D3CD AFBFC0 9FA4A9 847E89 56494C  Used: https://coolors.co/generate*/
+
+body{ /* Sets the standard for the body, sets the font, text colors, and a few other properties */
+    font-family: Georgia, "Times New Roman", serif; 
+    line-height:1.6; 
+    color:#222; 
+    background-color: #e0eee8;
+    margin: 0;
+}
+
+main { /* Just sets a margin and max-width to keep the content centered */
+    margin: 50px auto;
+    max-width: 800px;
+}
+
+header{ /* Used in the nav bar which is on everypage */
+    background-color: #847E89;
+    padding: 1rem;
+    text-align: center;
+    margin:auto;
+}
+
+hr {
+    border: 0;
+    height: 5px;
+    background: #56494C;
+}
+
+footer { /* Used in the footer which is on every page */
+    background-color: #AFBFC0;
+    padding: 1rem;
+    text-align: center;
+    border-top: 5px solid #56494C;
+}
+
+
+#abstract{ /* Abstract section, uses the id set in html*/
+    background:#AFBFC0; 
+    border:5px solid #56494C; 
     padding:0 1.2rem 1rem; 
+}
+
+
+.tableOfContents a:hover{ /* For the text in the table of contents when hovered over */
+    background-color: #AFBFC0;
+    color: #56494C;
+}
+.tableOfContents a{
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 20px;
+    color: #56494C;
+}
+.tableOfContents li{
+    font-size: 20px;
+    font-weight: bold;
+    color: #56494C;
+}
+
+nav ul { /* For the nav bar */
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    display:flex; 
+    flex-wrap:wrap;
+    background-color: #847E89;
+}
+nav a { /* For the text in the nav bar */
+    text-decoration: none;
+    color: #E7E6F7;
+    padding: 11px;
+    margin: 5px;
+}
+nav a:hover { /* For the text in the nav bar when hovered over */
+    background-color: #AFBFC0;
+    color: #56494C;
+}
+
+#portsTable { /* used a table for the ports */
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#portsTable td { /* styles for the table cells */
+    border: 1px solid #56494C;
+    padding: 8px;
+    text-align: left;
+}
+#portsTable th { /* styles for the table headers */
+    background-color: #847E89;
+    color: #E7E6F7;
+}
+
+#staticDynamic { /* grid for the two static vs dynamic sections */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#staticDynamic p{
+    border: 1px solid #56494C;
+    padding: 8px;
+    margin: 10px;
+    text-align: left;
+    background-color: #AFBFC0;
 }

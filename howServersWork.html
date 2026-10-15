@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>All About Web Servers</h1>
+        <nav> <!-- Navigation bar which links to other pages-->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="howServersWork.html">How Servers Work</a></li>
+                <li><a href="speedAndSecurity.html">Speed and Security</a></li>
+                <li><a href="keyConcepts.html">Key Concepts</a></li>
+                <li><a href="references.html">References</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>How Web Servers Work</h1>
+        <hr>
+        <section id="hardwareSoftware"> <!-- Section that goes over hardware and software -->
+            <h2>Hardware and Software</h2>
+                <p>
+                    Web servers are made up of both hardware and software. 
+                    The hardware is the physical machine that stores the website's files and data, 
+                    while the software is the programs and files that handles users' requests. 
+                    Together, they work to ensure that websites are functional all over the world.
+                </p>
+        </section>
+        <section id="webServerStructure"> <!-- Goes over the web server structure, from user to webserver back to the user-->
+            <h2>Web Server Structure</h2>
+                <ol>
+                    <li><strong>Browser</strong>: The user enters a URL, and the browser sends an HTTP request.</li>
+                    <li><strong>DNS</strong>: The DNS translates the URL into an IP address.</li>
+                    <li><strong>Internet</strong>: The request travels through the internet to the web server.</li>
+                    <li><strong>Web Server</strong>: The web server receives the request and processes it.</li>
+                    <li><strong>Database</strong>: The web server interacts with a database to retrieve or store data.</li>
+                    <li><strong>Web Server</strong>: The web server then sends a response back to the browser.</li>
+                    <li><strong>Browser</strong>: The browser receives the response and displays the webpage.</li>
+                </ol>
+        </section>
+        <section id="httpPorts"> <!-- Talks about HTTP and ports-->
+            <h2>HTTP Protocol</h2>
+                <p>
+                    HTTP (Hypertext Transfer Protocol) is the standard ruleset for communication between web browsers and servers. 
+                    It defines how messages are formatted and transmitted, 
+                    and what actions web servers and browsers should take in response to various commands.
+                </p>
+            <h2>Ports</h2>
+                <p>
+                    Ports are a way for computers and web servers to figure out where to send and find other machines.
+                    They help determine where the request was sent and where to send it back.
+                </p>
+
+            <table id="portsTable"> <!-- A table that lists common ports -->
+                <tr>
+                    <th>Port</th>
+                    <th>Purpose</th>
+                </tr>
+                <tr>
+                    <td>80</td>
+                    <td>Used for standard web traffic.</td>
+                </tr>
+                <tr>
+                    <td>443</td>
+                    <td>Used for secure web traffic.</td>
+                </tr>
+                <tr>
+                    <td>53</td>
+                    <td>Used for DNS queries.</td>
+                </tr>
+                <tr>
+                    <td>20-21</td>
+                    <td>Used for File Transfer Protocol (FTP).</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>2026 - Garrett Fowler - <a href="https://ksuweb.github.io/IT3203/">Class Website</a></p>
+    </footer>
+</body>
+</html>
