@@ -1,6 +1,11 @@
 
 /* Colors: C2D3CD AFBFC0 9FA4A9 847E89 56494C  Used: https://coolors.co/generate*/
 
+
+* { 
+    box-sizing: border-box;  /* Fixes the width + padding that causes horizontal scroll bar */
+} 
+
 body{ /* Sets the standard for the body, sets the font, text colors, and a few other properties */
     font-family: Georgia, "Times New Roman", serif; 
     line-height:1.6; 
