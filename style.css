@@ -7,11 +7,15 @@ body{ /* Sets the standard for the body, sets the font, text colors, and a few o
     color:#222; 
     background-color: #e0eee8;
     margin: 0;
+    min-height: 100vh; /* Fixes footer to the bottom of the page */
+    display: flex;
+    flex-direction: column;
 }
 
 main { /* Just sets a margin and max-width to keep the content centered */
     margin: 50px auto;
     max-width: 800px;
+    flex: 1;
 }
 
 header{ /* Used in the nav bar which is on everypage */
@@ -19,6 +23,7 @@ header{ /* Used in the nav bar which is on everypage */
     padding: 1rem;
     text-align: center;
     margin:auto;
+    width: 100%;
 }
 
 hr {
