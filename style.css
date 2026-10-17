@@ -45,6 +45,11 @@ footer { /* Used in the footer which is on every page */
 }
 
 
+img { /* Used for the image about the web server diagram */
+    border: 5px solid #56494C;
+}
+
+
 #abstract{ /* Abstract section, uses the id set in html*/
     background:#AFBFC0; 
     border:5px solid #56494C; 
