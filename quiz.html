@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <h1>All About Web Servers</h1>
+        <nav> <!-- Navigation bar which links to other pages-->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="howServersWork.html">How Servers Work</a></li>
+                <li><a href="speedAndSecurity.html">Speed and Security</a></li>
+                <li><a href="keyConcepts.html">Key Concepts</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="references.html">References</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <div id="quizInformation" >
+            <h2>Quiz Instructions</h2>
+            <p>
+                This quiz consists of 10 questions about web servers. It will test your knowledge over the information from the rest of the website. You will have 10 minutes to complete the quiz.
+            </p>
+        </div> 
+
+        <form id="quizForm">
+
+        <!-- JavaScript will generate questions here -->
+        <div id="quizContainer"></div>
+        
+        <div id="timer">Time Remaining: 10:00</div>
+
+        <button type="button" id="startQuiz">Start Quiz</button>
+
+        <button type="submit" id="submitQuiz">Submit Quiz</button>
+
+        <button type="button" id="resetQuiz">Reset Quiz</button>
+
+
+
+    </form>
+
+        <div id="results"></div>
+
+        <script src="script.js"></script>
+        
+    </main>
+    <footer>
+        <p>2026 - Garrett Fowler - <a href="https://ksuweb.github.io/IT3203/">Class Website</a></p>
+    </footer>
+
+</body>
+</html>

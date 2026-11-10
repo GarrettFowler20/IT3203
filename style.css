@@ -2,9 +2,7 @@
 /* Colors: C2D3CD AFBFC0 9FA4A9 847E89 56494C  Used: https://coolors.co/generate*/
 
 
-* { 
-    box-sizing: border-box;  /* Fixes the width + padding that causes horizontal scroll bar */
-} 
+* { box-sizing: border-box; } /* Fixes the width + padding that causes horizontal scroll bar */
 
 body{ /* Sets the standard for the body, sets the font, text colors, and a few other properties */
     font-family: Georgia, "Times New Roman", serif; 
@@ -44,16 +42,18 @@ footer { /* Used in the footer which is on every page */
     border-top: 5px solid #56494C;
 }
 
-
-img { /* Used for the image about the web server diagram */
-    border: 5px solid #56494C;
+li { 
+    margin-bottom: 10px;
 }
-
 
 #abstract{ /* Abstract section, uses the id set in html*/
     background:#AFBFC0; 
     border:5px solid #56494C; 
     padding:0 1.2rem 1rem; 
+}
+
+img { /* Used for the image about the web server diagram */
+    border: 5px solid #56494C;
 }
 
 
@@ -109,7 +109,7 @@ nav a:hover { /* For the text in the nav bar when hovered over */
 
 #staticDynamic { /* grid for the two static vs dynamic sections */
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 #staticDynamic p{
@@ -118,4 +118,79 @@ nav a:hover { /* For the text in the nav bar when hovered over */
     margin: 10px;
     text-align: left;
     background-color: #AFBFC0;
+}
+
+#timer {
+
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    font-size: 20px;
+
+    background-color: #AFBFC0;
+    border: 2px solid #56494C;
+    padding: 10px;
+
+    font-weight: bold;
+    margin-top: 20px;
+    color: #56494C;
+
+    display: none;
+}
+
+#submitQuiz {
+    display: none;
+}
+
+#resetQuiz {
+    display: none;
+}
+
+#quizResults {
+    background-color: #847E89;
+    border: 2px solid #56494C;
+    margin-bottom: 20px;
+    padding: 10px;
+
+    color: #E7E6F7;
+}
+
+.question {
+    background: #AFBFC0;
+    padding: 40px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 2px solid #56494C;
+
+    width: 100%;
+    min-height: 150px;
+    box-sizing: border-box;
+
+
+    font-size: 18px;
+}
+
+
+
+.question h3 {
+    margin-top: -20px;
+}
+.question label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.question input[type="text"] {
+    padding: 10px;
+    width: 90%;
+}
+
+button {
+    padding: 12px 25px;
+    background: #56494C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
